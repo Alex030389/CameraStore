@@ -1,0 +1,52 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__number-prod {
+  color: $dark-gray-color;
+  margin-bottom: 7px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 18px;
+  }
+}
+
+.filter__title {
+  font-size: 32px;
+  margin-bottom: 13px;
+  
+  @media (max-width: $lg) {
+    order: -1;
+    margin-bottom: 24px;
+  }
+}
+
+.filter__list {
+}
+
+.filter__item {
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.filter__item-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.filter__price {
+  max-width: 300px;
+}
+
+.filter__brands {
+  margin-top: -3px;
+}
+
+.filter__brands-item {
+  &:not(:last-of-type) {
+    margin-bottom: 3px;
+  }
+}

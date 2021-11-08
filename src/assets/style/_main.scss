@@ -1,0 +1,30 @@
+.main {
+  padding: 64px 0;
+}
+
+.main__row {
+  display: flex;
+
+  @media (max-width: $lg) {
+    flex-wrap: wrap;
+  }
+}
+
+.main__sidebar {
+  width: 224px;
+  flex-shrink: 0;
+  margin-right: 38px;
+
+  @media (max-width: $lg) {
+    width: 100%;
+    margin: 0 0 35px;
+  }
+}
+
+.main__content {
+  flex-grow: 1;
+  
+  @media (max-width: $lg) {
+    width: 100%;
+  }
+}

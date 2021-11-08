@@ -1,0 +1,37 @@
+.products {
+}
+
+.products__list {
+  @extend .list-reset;
+  margin: 0 -12px -24px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $sm) {
+    margin: 0 -15px 0;
+  }
+}
+
+.products__item {
+  padding: 0 12px 24px;
+  width: 25%;
+
+  @media (max-width: $sl) {
+    width: 33.333333%;
+  }
+
+  @media (max-width: $xl) {
+    width: 50%;
+  }
+
+  @media (max-width: $sm) {
+    width: 100%;
+    padding: 0 15px 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $light-gray-color;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
